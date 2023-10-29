@@ -20,6 +20,6 @@ export class ServicesComponent {
   }
 
   onSubmit() {
-    console.log(this.form_data.value);
+    console.log(this.form_data.value, "Formulario de contacto reactivo");
   }
 }
