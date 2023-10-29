@@ -1,0 +1,77 @@
+@import './../../../styles.scss';
+
+.hero{
+    padding: 54px 0;
+    width: 100%;
+    height: calc(100vh - 56px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+
+    position: relative;
+
+    // background-color: #eef7ee;
+    overflow: hidden;
+
+    @include tablet {
+        align-items: center;
+        text-align: center;
+    }
+
+    &_title{
+        width: 400px;
+        color: $Dark-Blue;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: .95;
+        margin-bottom: 16px;
+
+        @include mobile {
+            font-size: 48px;
+        }
+    }
+
+    &_paragraph{
+        font-size: 16px;
+        color: $Dark-Gray;
+        margin-bottom: 48px;
+    }
+
+    &_cta{
+        text-decoration: none;
+        color: #FFF;
+        padding: 16px 40px;
+        background-color: $Orange;
+    }
+
+    &_achivements{
+        display: flex;
+        gap: 40px;
+    }
+
+    &_image{
+        position: absolute;
+        right: 0;
+        bottom: -32px;
+        width: 55%;
+
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.achivement{
+    color: $Dark-Blue;
+
+    &_number{
+        font-size: 40px;
+        font-weight: 700;
+
+        @include mobile {
+            font-size: 32px;
+        }
+    }
+}   
