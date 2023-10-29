@@ -1,1 +1,34 @@
 @import './../../../styles.scss';
+
+.benefits{
+    padding: 32px 0;
+}
+
+.business-values{
+    display: grid;
+    gap: 16px;
+}
+
+.business-value{
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    
+    &-icon{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #f0f9f1;
+    }
+    
+    &-title{
+        font-size: 20px;
+    }
+}
