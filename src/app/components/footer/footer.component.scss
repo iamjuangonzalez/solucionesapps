@@ -1,0 +1,40 @@
+.container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  /* Estilos para cada columna */
+  .columna {
+    flex: 0 0 calc(33.333% - 40px); /* 3 columnas con espacio entre ellas */
+    margin: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .columna h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .columna ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .columna ul li {
+    margin-bottom: 8px;
+  }
+  
+  .columna a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Cambiar el color de los enlaces al pasar el mouse sobre ellos */
+  .columna a:hover {
+    color: #ff6600;
+  }

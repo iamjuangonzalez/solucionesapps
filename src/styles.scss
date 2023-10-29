@@ -17,9 +17,47 @@
 }
 
 /* Colors variables */
-$Orange: #f45f10;
+$Blue: #0CD1F1;
 $Dark-Blue: #2d3c4e;
 $Dark-Gray: #8c94a0;
+
+// fonts
+$poppinsBold: "poppingBold", system-ui, sans-serif;
+$poppinsLight: "poppingLight", system-ui, sans-serif;
+$poppinsMedium: "poppingMedium", system-ui, sans-serif;
+$poppinsRegular: "poppingRegular", system-ui, sans-serif;
+$poppinsSemibold: "poppingSemibold", system-ui, sans-serif;
+
+
+// import font
+@font-face {
+    font-family: "poppingBold";
+    src: local("Aboreto"), url(./assets/fonts/Poppins-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "poppingLight";
+    src: local("Aboreto"),
+        url(./assets/fonts/Poppins-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "poppingMedium";
+    src: local("Aboreto"),
+        url(./assets/fonts/Poppins-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "poppingRegular";
+    src: local("Aboreto"),
+        url(./assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "poppingSemibold";
+    src: local("Aboreto"),
+        url(./assets/fonts/Poppins-SemiBold.ttf) format("truetype");
+}
 
 
 *,
@@ -34,7 +72,7 @@ body {
     position: relative;
     box-sizing: border-box;
     height: 100%;
-    font-family: sans-serif;
+    font-family: $poppinsMedium, sans-serif;
     overflow-x: hidden;
     color: #000;
     font-size: 16px;
@@ -56,4 +94,33 @@ body {
 
 .desktop {
     display: none;
+}
+
+
+.whatsapp-btn {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    z-index: 1000;
+    right: 60px;
+    border-radius: 100px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(0, 255, 64), rgb(0, 214, 89));
+    box-shadow: rgba(4, 43, 1, 0.1) 0px 1px 6px, rgba(4, 43, 1, 0.1) 0px 2px 24px;
+
+    @include mobile {
+        height: 50px;
+        width: 50px;
+        right: 20px;
+        bottom: 100px;
+    }
+
+    .icon-wrapper img {
+        height: 35px;
+        position: relative;
+        top: -1px;
+    }
 }
