@@ -1,4 +1,4 @@
-import { Resend } from 'resend';
+/* import { Resend } from 'resend';
 import Environment from '../../environments/index';
 
 type FormDataType = {
@@ -47,3 +47,4 @@ async function sendEmail({userEmail, subject, formData,}: emailType): Promise<an
 }
 
 export default sendEmail;
+ */
