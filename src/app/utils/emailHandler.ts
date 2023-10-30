@@ -1,4 +1,4 @@
-/* import { Resend } from 'resend';
+import { Resend } from 'resend';
 import Environment from '../../environments/index';
 
 type FormDataType = {
@@ -14,7 +14,11 @@ type emailType = {
   formData: FormDataType;
 };
 
-async function sendEmail({userEmail, subject, formData,}: emailType): Promise<any | Error> {
+async function sendEmail({
+  userEmail,
+  subject,
+  formData,
+}: emailType): Promise<any | Error> {
   const sendEmail = new Resend(Environment.EMAIL_API_TOKEN);
 
   const templateEmail = `
@@ -47,4 +51,4 @@ async function sendEmail({userEmail, subject, formData,}: emailType): Promise<an
 }
 
 export default sendEmail;
- */
+

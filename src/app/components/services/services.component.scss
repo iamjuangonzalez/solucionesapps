@@ -1,132 +1,134 @@
-@import './../../../styles.scss';
-
+@import "./../../../styles.scss";
 
 .services_business {
-    margin-top: 40px;
+  margin-top: 120px;
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        .title_container_header {
-            text-align: center;
-            font-size: 40px;
-        }
-
-        .accordion {
-            margin: 20px 0;
-            border: 1px solid #d5e8f3;
-            border-radius: 8px;
-            max-width: 1000px;
-            width: 100%;
-
-            .accordion-item {
-                border: none !important;
-                outline: none !important;
-            }
-        }
-
-        .title_business {
-            text-align: center;
-            font-size: 14px;
-            color: #5d5d5d;
-            max-width: 1000px;
-        }
+    .title_container_header {
+      text-align: center;
+      font-size: 40px;
     }
 
+    .accordion {
+      margin: 20px 0;
+      border: 1px solid #d5e8f3;
+      border-radius: 8px;
+      max-width: 1000px;
+      width: 100%;
+
+      .accordion-item {
+        border: none !important;
+        outline: none !important;
+      }
+    }
+
+    .title_business {
+      text-align: center;
+      font-size: 14px;
+      color: #5d5d5d;
+      max-width: 1000px;
+    }
+  }
 }
 
 .items_services_business {
-    margin: 80px 0;
+  margin: 120px 0;
 
-    @include mobile {}
+  @include mobile {
+  }
 
-    .container {
-
-        .title_service {
-            text-align: center;
-            font-size: 40px;
-            margin-bottom: 40px;
-        }
-
-        .items_services {
-            display: flex;
-            gap: 20px;
-
-            @include tablet {
-                flex-direction: column;
-            }
-
-            @include mobile {
-                flex-direction: column;
-            }
-
-            .item {
-                width: 100%;
-                height: auto;
-                text-align: center;
-                background-color: #fff;
-                border-radius: 7px;
-                padding: 20px 10px;
-                text-decoration: none;
-                box-shadow: 0 0px 36px 6px rgba(183, 183, 183, 0.25);
-
-                .title_item {
-                    font-size: 22px;
-                    font-family: $poppinsSemibold;
-                }
-            }
-        }
+  .container {
+    .title_service {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
     }
+
+    .items_services {
+      display: flex;
+      gap: 20px;
+
+      @include tablet {
+        flex-direction: column;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .item {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 20px 10px;
+        text-decoration: none;
+        box-shadow: 0 0px 36px 6px rgba(183, 183, 183, 0.25);
+
+        .title_item {
+          font-size: 22px;
+          font-family: $poppinsSemibold;
+        }
+      }
+    }
+  }
 }
 
 .contact_business {
-    .container {
+  .title_contact {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form_contact {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+      gap: 10px;
+
+      .form-group {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
 
-        .form_contact {
-            display: flex;
-            flex-direction: column;
-            padding: 40px;
-            gap: 10px;
-
-            .form-group {
-                display: flex;
-                flex-direction: column;
-
-                input,
-                textarea {
-                    padding: 4px;
-                    outline: none;
-                    font-size: 18px;
-                    border: 1px solid #d5e8f3;
-                    ;
-                    border-radius: 4px;
-                    color: #000;
-                }
-            }
-
-            .send_contact {
-                text-decoration: none;
-                color: #FFF;
-                background-color: #0CD1F1;
-                padding: 10px;
-                font-size: 20px;
-                border: none;
-                border-radius: 4px;
-            }
-
-            .disabled {
-                padding: 10px;
-                font-size: 20px;
-                border: none;
-                border-radius: 4px;
-                background-color: #d5e8f3;
-                color: #FFF;
-            }
+        input,
+        textarea {
+          padding: 8px 12px;
+          outline: none;
+          font-size: 18px;
+          border: 1px solid #d5e8f3;
+          border-radius: 4px;
+          color: #000;
         }
+      }
+
+      .send_contact {
+        text-decoration: none;
+        color: #fff;
+        background-color: #0cd1f1;
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        border-radius: 4px;
+      }
+
+      .disabled {
+        padding: 10px;
+        font-size: 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #d5e8f3;
+        color: #fff;
+      }
     }
+  }
 }

@@ -1,108 +1,104 @@
-@import './../../../styles.scss';
-
+@import "./../../../styles.scss";
 
 .benefits {
-    margin: 70px 0;
+  margin: 120px 0;
 
-    .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        @include tablet {
-            flex-direction: column;
-        }
+    @include tablet {
+      flex-direction: column;
+    }
 
-        .image_content {
-            @include mobile {
-                display: none;
-            }
+    .image_content {
+      @include mobile {
+        display: none;
+      }
 
-            @include tablet {
-                display: none;
-            }
-        }
-        .items {
+      @include tablet {
+        display: none;
+      }
+    }
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .title_header {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 125%;
+        margin-bottom: 16px;
+      }
+
+      .title_subheader {
+        font-size: 18px;
+      }
+
+      .items {
+        .item {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .image_item {
+            width: 60px;
+            filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.08));
+          }
+
+          .titles_item {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-
-            .title_header {
-                font-size: 40px;
-                font-weight: 700;
-                line-height: .95;
-                margin-bottom: 16px;
-            }
-
-            .title_subheader {
-                font-size: 18px;
-            }
-
-            .items {
-                .item {
-                    display: flex;
-                    align-items: center;
-                    gap: 20px;
-
-                    .image_item {
-                        width: 60px;
-                        filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.08));
-                    }
-
-                    .titles_item {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-            }
+          }
         }
+      }
     }
+  }
 }
 
 .contact_renting {
+  .element {
+    background-color: #0cd1f1;
+    padding: 60px;
+    width: 100%;
+
     .container {
-        .element {
-            display: flex;
-            background-color: #0CD1F1;
-            padding: 60px;
-            width: 100%;
-            align-items: center;
+      display: flex;
+      align-items: center;
+      @include tablet {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
 
-            @include tablet {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 20px;
-            }
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
 
-            @include mobile {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 20px;
-            }
+      .title_header {
+        font-size: 40px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 125%;
+      }
 
-            .title_header {
-                font-size: 40px;
-                font-weight: 700;
-                color: #fff;
-                line-height: 1.1;
-            }
+      .title_subheader {
+        font-size: 20px;
+        color: #fff;
+        line-height: 1;
+      }
 
-            .title_subheader {
-                font-size: 20px;
-                color: #fff;
-                line-height: 1;
-            }
-
-            .btn_contact {
-                color: #0CD1F1;;
-                padding: 16px 40px;
-                background-color: #fff;
-                border: none;
-                border-radius: 4px;
-
-            }
-
-
-        }
+      .btn_contact {
+        color: #0cd1f1;
+        padding: 16px 40px;
+        background-color: #fff;
+        border: none;
+        border-radius: 4px;
+      }
     }
+  }
 }
