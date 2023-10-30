@@ -47,6 +47,7 @@
     .hero_right {
       z-index: 2;
       position: relative;
+      right: -62px;
 
       .card_item {
         max-width: 200px;
@@ -143,4 +144,3 @@
     }
   }
 }
-
