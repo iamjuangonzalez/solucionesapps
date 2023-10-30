@@ -133,14 +133,17 @@
             </div>
             <div class="form-group">
                 <label for="phone">Teléfono</label>
-                <input type="text" name="phone" id="phone" formControlName="phone" maxlength="10" minlength="10" placeholder="Teléfono">
+                <input type="text" name="phone" id="phone" formControlName="phone" maxlength="10" minlength="10"
+                    placeholder="Teléfono">
             </div>
             <div class="form-group">
                 <label for="message">Mensaje</label>
-                <textarea name="message" id="message" cols="50" rows="2" formControlName="message" placeholder="Mensaje"></textarea>
+                <textarea name="message" id="message" cols="50" rows="2" formControlName="message"
+                    placeholder="Mensaje"></textarea>
             </div>
 
-            <button class="send_contact" type="submit">Enviar</button>
+            <button type="submit" [ngClass]="form_data.invalid ? 'disabled' : 'send_contact'"
+                [disabled]="form_data.invalid">Enviar</button>
 
         </form>
     </div>

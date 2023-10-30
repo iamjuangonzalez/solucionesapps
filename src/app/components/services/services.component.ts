@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import sendEmail from '../../utils/emailHandler';
 
 @Component({
   selector: 'app-services',
@@ -10,7 +11,7 @@ export class ServicesComponent {
 
   public form_data: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,) {
     this.form_data = this.fb.group({
       names: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -20,6 +21,11 @@ export class ServicesComponent {
   }
 
   onSubmit() {
-    console.log(this.form_data.value, "Formulario de contacto reactivo");
+    try {
+      if(this.form_data.invalid) return;
+      /* const res = sendEmail(this.form_data.value); */
+    } catch (error) {
+      
+    }
   }
 }

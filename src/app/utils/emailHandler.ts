@@ -1,11 +1,6 @@
 import { Resend } from 'resend';
 import Environment from '../../environments/index';
 
-import {
-  CreateEmailOptions,
-  CreateEmailResponse,
-} from 'resend/build/src/emails/interfaces';
-
 type FormDataType = {
   fullName: string;
   email: string;
@@ -19,11 +14,7 @@ type emailType = {
   formData: FormDataType;
 };
 
-async function sendEmail({
-  userEmail,
-  subject,
-  formData,
-}: emailType): Promise<CreateEmailResponse | Error> {
+async function sendEmail({userEmail, subject, formData,}: emailType): Promise<any | Error> {
   const sendEmail = new Resend(Environment.EMAIL_API_TOKEN);
 
   const templateEmail = `
@@ -41,7 +32,7 @@ async function sendEmail({
   `;
 
   try {
-    const sendEmailOptions: CreateEmailOptions = {
+    const sendEmailOptions: any = {
       from: Environment.EMAIL_FROM,
       to: userEmail,
       subject,
