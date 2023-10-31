@@ -12,6 +12,7 @@
     padding-bottom: 40px;
 
     .hero_left {
+      z-index: 1;
       .hero_title {
         color: $Dark-Blue;
         font-size: 64px;
@@ -75,7 +76,6 @@
       @include tablet {
         display: none;
       }
-
     }
 
     .image_background {
@@ -91,7 +91,6 @@
       @include tablet {
         display: none;
       }
-
     }
   }
 }
