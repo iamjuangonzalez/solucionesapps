@@ -15,10 +15,12 @@
   flex: 0 0 calc(33.333% - 40px); /* 3 columnas con espacio entre ellas */
   margin: 0 20px;
   box-sizing: border-box;
+  letter-spacing: 1px;
 }
 
 .columna h3 {
   font-size: 18px;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
@@ -34,9 +36,32 @@
 .columna a {
   color: #fff;
   text-decoration: none;
+
+  transition: all 0.3s ease-in-out;
 }
 
 /* Cambiar el color de los enlaces al pasar el mouse sobre ellos */
 .columna a:hover {
   color: #ff6600;
+}
+
+/* Estilos para el logo */
+.logo {
+  width: 300px;
+  margin-bottom: 8px;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+
+  svg {
+    fill: #fff;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      fill: #ff6600;
+    }
+  }
 }
