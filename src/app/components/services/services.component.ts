@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { SendEmailService } from 'src/app/services/send-email.service';
 
 @Component({
   selector: 'app-services',
@@ -11,7 +12,7 @@ export class ServicesComponent {
   public form_data: FormGroup;
   public send_email_true: boolean = false;
 
-  constructor(private fb: FormBuilder,) {
+  constructor(private fb: FormBuilder, private _sendEmailService: SendEmailService) {
     this.form_data = this.fb.group({
       names: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
@@ -24,6 +25,7 @@ export class ServicesComponent {
     try {
       if (this.form_data.invalid) return;
       this.send_email_true = true;
+      this._sendEmailService.sendEmail(this.form_data.value);
     } catch (error) {
       console.log(error);
     } finally {

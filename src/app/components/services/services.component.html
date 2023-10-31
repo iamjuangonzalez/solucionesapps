@@ -174,9 +174,9 @@
       <button type="submit" [ngClass]="form_data.invalid ? 'disabled' : 'send_contact'" [disabled]="form_data.invalid">
         Enviar
       </button>
+      <div class="alert alert-success" *ngIf="send_email_true" role="alert">
+        Pronto nos pondremos en contacto contigo. Gracias por tu interés.
+      </div>
     </form>
-    <div class="alert alert-success" *ngIf="send_email_true" role="alert">
-      Pronto nos pondremos en contacto contigo. Gracias por tu interés.
-    </div>
   </div>
 </section>
