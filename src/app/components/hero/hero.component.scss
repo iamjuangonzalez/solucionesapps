@@ -20,7 +20,7 @@
         margin-bottom: 16px;
 
         @include mobile {
-          font-size: 48px;
+          font-size: 34px;
         }
       }
 
@@ -42,6 +42,10 @@
         display: flex;
         gap: 40px;
         margin-top: 60px;
+
+        @include mobile {
+          gap: 10px;
+        }
       }
     }
 
@@ -63,11 +67,31 @@
       }
     }
 
+    .hero_image {
+      @include mobile {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+      }
+
+    }
+
     .image_background {
       position: absolute;
       right: 85px;
       top: 0;
       bottom: 0;
+
+      @include mobile {
+        display: none;
+      }
+
+      @include tablet {
+        display: none;
+      }
+
     }
   }
 }

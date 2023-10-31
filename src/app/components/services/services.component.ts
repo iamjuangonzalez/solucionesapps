@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ServicesComponent {
 
   public form_data: FormGroup;
+  public send_email_true: boolean = false;
 
   constructor(private fb: FormBuilder,) {
     this.form_data = this.fb.group({
@@ -21,10 +22,16 @@ export class ServicesComponent {
 
   onSubmit() {
     try {
-      if(this.form_data.invalid) return;
-      /* const res = sendEmail(this.form_data.value); */
+      if (this.form_data.invalid) return;
+      this.send_email_true = true;
     } catch (error) {
-      
+      console.log(error);
+    } finally {
+      setTimeout(() => {
+        this.send_email_true = false;
+        this.form_data.reset();
+      }, 3000)
     }
+
   }
 }
