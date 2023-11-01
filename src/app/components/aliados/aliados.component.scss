@@ -1,5 +1,8 @@
+@import './../../../styles.scss';
+
 .allies {
     margin-top: 120px;
+
     .container {
         text-align: center;
 
@@ -8,6 +11,10 @@
             align-items: center;
             justify-content: center;
             gap: 40px;
+
+            @include mobile {
+                flex-direction: column;
+            }
         }
     }
 }

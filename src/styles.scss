@@ -97,6 +97,33 @@ body {
     display: none;
 }
 
+.go-top {
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    z-index: 1000;
+    right: 60px;
+    border-radius: 100px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0cd1f1;
+
+    @include mobile {
+        height: 50px;
+        width: 50px;
+        right: 30px;
+        bottom: 40px;
+    }
+
+    .icon-wrapper img {
+        height: 35px;
+        position: relative;
+    }
+
+}
+
 
 .whatsapp-btn {
     position: fixed;
@@ -115,7 +142,7 @@ body {
     @include mobile {
         height: 50px;
         width: 50px;
-        right: 20px;
+        right: 30px;
         bottom: 100px;
     }
 

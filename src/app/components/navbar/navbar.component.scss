@@ -1,3 +1,5 @@
+@import './../../../styles.scss';
+
 .navbar_b {
   // background-color: #f6f0f7;
   background-color: #f0f3f7;
@@ -7,6 +9,16 @@
 
     .container-fluid {
       padding: 0;
+
+      .navbar-brand {
+        .logo_empresa {
+          width: 300px;
+
+          @include mobile {
+            width: 240px;
+          }
+        }
+      }
     }
   }
 }
