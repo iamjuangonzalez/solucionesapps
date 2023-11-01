@@ -193,11 +193,13 @@
     color: $Dark-Gray;
 
     margin: 0;
+    margin-bottom: 16px;
   }
 
   &_divider {
     position: absolute;
-    bottom: 4px;
+    left: 32px;
+    bottom: 8px;
     width: calc(100% - 64px);
     height: 4px;
 
@@ -206,5 +208,9 @@
     @include tablet {
       left: 32px;
     }
+  }
+
+  &_cta {
+    color: $Dark-Gray;
   }
 }
