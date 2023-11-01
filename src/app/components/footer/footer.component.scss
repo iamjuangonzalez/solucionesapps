@@ -2,7 +2,7 @@
 
 .container {
   color: #fff;
-  padding: 20px 0;
+  padding: 24px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -11,6 +11,24 @@
 .box-footer {
   background-color: #333;
   margin-top: 120px;
+}
+
+.sub-footer {
+  background-color: #333;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+
+  p {
+    margin: 0;
+    color: #fff;
+  }
+
+  .entity {
+    color: #0cd1f1;
+  }
 }
 /* Estilos para cada columna */
 .columna {
@@ -73,7 +91,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      fill: #ff6600;
+      fill: #0cd1f1;
     }
   }
 }
