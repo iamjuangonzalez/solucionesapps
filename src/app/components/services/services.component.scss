@@ -23,6 +23,15 @@
       .accordion-item {
         border: none !important;
         outline: none !important;
+
+        .accordion-header {
+          .accordion-button {
+            background-color: transparent !important;
+            &:focus {
+              box-shadow: none !important;
+            }
+          }
+        }
       }
     }
 
@@ -31,6 +40,8 @@
       font-size: 14px;
       color: #5d5d5d;
       max-width: 1000px;
+      font-family: $poppinsRegular;
+      line-height: 125%;
     }
   }
 }
@@ -38,7 +49,8 @@
 .items_services_business {
   margin: 120px 0;
 
-  @include mobile {}
+  @include mobile {
+  }
 
   .container {
     .title_service {

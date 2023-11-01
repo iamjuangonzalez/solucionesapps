@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .container {
   color: #fff;
   padding: 20px 0;
@@ -22,6 +24,7 @@
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 10px;
+  font-family: $poppinsSemibold;
 }
 
 .columna ul {
@@ -41,20 +44,29 @@
 }
 
 /* Cambiar el color de los enlaces al pasar el mouse sobre ellos */
-.columna a:hover {
-  color: #ff6600;
+// .columna a:hover {
+//   color: #ff6600;
+// }
+//
+.columna a {
+  &:hover {
+    color: #0cd1f1;
+  }
 }
 
 /* Estilos para el logo */
 .logo {
-  width: 300px;
+  width: 100%;
   margin-bottom: 8px;
+  height: 50px;
+  object-fit: contain;
 }
 
 .social-media {
   display: flex;
   gap: 16px;
-
+  justify-content: center;
+  margin-top: 12px;
   svg {
     fill: #fff;
 
