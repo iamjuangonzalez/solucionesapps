@@ -167,6 +167,8 @@
   background-color: #fff;
   position: relative;
   box-shadow: 0px 34px 26px -5px rgb(183 183 183 / 25%);
+  width: fit-content;
+  
 
   @include tablet {
     max-width: 400px;
