@@ -11,6 +11,7 @@ import { AdvantagesComponent } from './components/advantages/advantages.componen
 import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AliadosComponent } from './components/aliados/aliados.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AliadosComponent } from './components/aliados/aliados.component';
     AdvantagesComponent,
     ServicesComponent,
     FooterComponent,
-    AliadosComponent
+    AliadosComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
