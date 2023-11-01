@@ -1,0 +1,13 @@
+.allies {
+    margin-top: 120px;
+    .container {
+        text-align: center;
+
+        .items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+        }
+    }
+}
