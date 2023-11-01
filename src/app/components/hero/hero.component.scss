@@ -1,7 +1,7 @@
 @import "./../../../styles.scss";
 
 .hero {
-  background-color: #f6f0f7;
+  background-color: #f0f3f7;
 
   .container {
     display: flex;
@@ -29,6 +29,7 @@
         font-size: 16px;
         color: $Dark-Gray;
         margin-bottom: 48px;
+        font-family: $poppinsRegular;
       }
 
       .hero_cta {
