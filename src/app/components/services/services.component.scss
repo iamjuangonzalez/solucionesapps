@@ -1,50 +1,8 @@
 @import "./../../../styles.scss";
 
-.items_services_business {
-  margin: 120px 0;
-
-  @include mobile {
-  }
-
-  .container {
-    .title_service {
-      text-align: center;
-      font-size: 40px;
-      margin-bottom: 40px;
-    }
-
-    .items_services {
-      display: flex;
-      gap: 20px;
-
-      @include tablet {
-        flex-direction: column;
-      }
-
-      @include mobile {
-        flex-direction: column;
-      }
-
-      .item {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        background-color: #fff;
-        border-radius: 7px;
-        padding: 20px 10px;
-        text-decoration: none;
-        box-shadow: 0 0px 36px 6px rgba(183, 183, 183, 0.25);
-
-        .title_item {
-          font-size: 22px;
-          font-family: $poppinsSemibold;
-        }
-      }
-    }
-  }
-}
-
 .contact_business {
+  margin: 100px 0;
+
   .container {
     .box-contact {
       display: flex;
@@ -71,14 +29,10 @@
       .form_contact {
         width: 100%;
         padding-left: 80px;
-        // display: flex;
-        // flex-direction: column;
-        // padding: 40px;
-        // gap: 16px;
-
-        //   max-width: 420px;
-        // }
-
+        
+        @include mobile {
+          padding: 0;
+        }
         .form-group {
           display: flex;
           flex-direction: column;
@@ -125,30 +79,3 @@
 }
 
 /* Estilos para la sección de 'Tecnologías' */
-
-.list {
-  list-style: none;
-  color: $Dark-Gray;
-  padding: 0;
-
-  &_title {
-    font-size: 20px;
-  }
-
-  &_item {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    padding: 10px 0;
-    border-bottom: solid 2px;
-  }
-
-  &_icon {
-    width: 30px;
-  }
-}
-
-
-.technologies {
-  margin: 100px 0;
-}

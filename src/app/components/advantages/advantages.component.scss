@@ -1,7 +1,7 @@
 @import "./../../../styles.scss";
 
 .benefits {
-  margin: 120px 0;
+  margin: 100px 0;
 
   .container {
     display: flex;
@@ -61,6 +61,8 @@
 }
 
 .contact_renting {
+  margin: 100px 0;
+
   .element {
     background-color: #0cd1f1;
     padding: 120px 60px;
@@ -162,6 +164,110 @@
             color: $Dark-Gray;
           }
         }
+      }
+    }
+  }
+}
+
+.items_services_business {
+  margin: 100px 0;
+
+  @include mobile {}
+
+  .container {
+    .title_service {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+
+    .items_services {
+      display: flex;
+      gap: 20px;
+
+      @include tablet {
+        flex-direction: column;
+      }
+
+      @include mobile {
+        flex-direction: column;
+      }
+
+      .item {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 20px 10px;
+        text-decoration: none;
+        box-shadow: 0 0px 36px 6px rgba(183, 183, 183, 0.25);
+
+        .title_item {
+          font-size: 22px;
+          font-family: $poppinsSemibold;
+        }
+      }
+    }
+  }
+}
+
+
+.list {
+  list-style: none;
+  color: $Dark-Gray;
+  padding: 0;
+
+  &_title {
+    font-size: 20px;
+  }
+
+  &_item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: solid 2px;
+  }
+
+  &_icon {
+    width: 30px;
+  }
+}
+
+
+.technologies {
+  margin: 100px 0;
+
+  .items {
+    display: flex;
+    justify-content: space-around;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+
+  }
+}
+
+.allies {
+  margin: 100px 0;
+
+  .container {
+    text-align: center;
+
+    .items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+
+      @include mobile {
+        flex-direction: column;
       }
     }
   }

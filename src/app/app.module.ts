@@ -10,7 +10,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AdvantagesComponent } from './components/advantages/advantages.component';
 import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { AliadosComponent } from './components/aliados/aliados.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 @NgModule({
@@ -22,7 +21,6 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     AdvantagesComponent,
     ServicesComponent,
     FooterComponent,
-    AliadosComponent,
     TestimonialsComponent
   ],
   imports: [
