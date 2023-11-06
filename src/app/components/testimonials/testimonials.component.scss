@@ -27,6 +27,9 @@
     border-radius: 7px;
 
     color: $Dark-Gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     width: fit-content;
 
